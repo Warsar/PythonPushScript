@@ -20,3 +20,5 @@ It opens an SSH and SFTP connection to the server and uploads the specified scri
 This is just something I created when I had free time at work but there are some things I want to add:
 - Upload multiple files at once (in case the script needs data from another file)
 - Upload to multiple servers
+- Implement the use of parameters
+- Displaying stdout and stderr
