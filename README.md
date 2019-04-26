@@ -8,6 +8,9 @@ Keeping the scripts you use in 1 location guarantees not accidentally using depr
 There is probably a better way to do this using existing applications but this was interesting to create and useful in my situation where
 we don't use any tool to easily deploy new servers or changes.
 
+## How does it work
+It opens an SSH and SFTP connection to the server and uploads the specified script then executes it, reads the stdout and after completion of the script it deletes the file and closes the connection.
+
 ## Requirements
 - Python installed
 - SSH and SFTP access to remote server
