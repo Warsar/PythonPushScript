@@ -8,6 +8,11 @@ Keeping the scripts you use in 1 location guarantees not accidentally using depr
 There is probably a better way to do this using existing applications but this was interesting to create and useful in my situation where
 we don't use any tool to easily deploy new servers or changes.
 
+## Requirements
+- Python installed
+- SSH and SFTP access to remote server
+- Paramiko package for Python
+
 ## Todo
 This is just something I created when I had free time at work but there are some things I want to add:
 - Upload multiple files at once (in case the script needs data from another file)

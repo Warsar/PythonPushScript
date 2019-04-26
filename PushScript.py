@@ -37,23 +37,23 @@ try:
     stdout = client.exec_command('cd /tmp;'+ execute_command)[1]
 
 
-    sftp.remove(script_file_path)
-    print "Deleted file " + script_file_path + " completed"
-
-
-    print "Closing SFTP-connection: " + remote_username + "@" + remote_ip
-    sftp.close()
-
-    print "Closing SSH-connection: " + remote_username + "@" + remote_ip
-    client.close()
-
     # Output of script
     print "SCRIPT OUTPUT:"
     for line in stdout:
         # Process each line in the remote output
         print line
 
+    # Delete script
+    sftp.remove(script_file_path)
+    print "Deleted file " + script_file_path + " completed"
 
+    # Close SFTP
+    print "Closing SFTP-connection: " + remote_username + "@" + remote_ip
+    sftp.close()
+
+    #Close SSH
+    print "Closing SSH-connection: " + remote_username + "@" + remote_ip
+    client.close()
     sys.exit(0)
 except IndexError:
     pass
