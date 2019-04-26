@@ -11,6 +11,9 @@ we don't use any tool to easily deploy new servers or changes.
 ## How does it work
 It opens an SSH and SFTP connection to the server and uploads the specified script then executes it, reads the stdout and after completion of the script it deletes the file and closes the connection.
 
+## Usage
+Run the script in the same folder as the script you want to push to the server and follow the steps.
+
 ## Requirements
 - Python installed
 - SSH and SFTP access to remote server
