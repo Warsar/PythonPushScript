@@ -48,7 +48,7 @@ try:
     client.close()
 
     # Output of script
-    print "---SCRIPT OUTPUT---"
+    print "SCRIPT OUTPUT:"
     for line in stdout:
         # Process each line in the remote output
         print line
